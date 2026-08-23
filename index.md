@@ -10,11 +10,11 @@ hero:
     alt: Cynosure logo
   actions:
     - theme: brand
+      text: Download Cynosure
+      link: https://github.com/andreasjhagen/Cynosure/releases
+    - theme: alt
       text: Get started
       link: /guide/getting-started
-    - theme: alt
-      text: Explore features
-      link: /features/chat
 
 features:
   - icon: 💬
@@ -47,7 +47,7 @@ Cynosure brings chat, reusable agents, connected tools, long-term knowledge, and
 
 <div class="quick-grid">
   <a class="quick-card" href="./guide/getting-started"><strong>New to Cynosure?</strong><span>Connect a model provider and send your first message.</span></a>
+  <a class="quick-card" href="./guide/examples"><strong>See what it can do</strong><span>Explore practical examples for communication, research, files, media, memory, and automation.</span></a>
   <a class="quick-card" href="./features/agents"><strong>Build a specialist</strong><span>Create an agent with a stable role, toolset, and knowledge.</span></a>
   <a class="quick-card" href="./features/memory"><strong>Add your knowledge</strong><span>Upload documents and make their contents available to agents.</span></a>
-  <a class="quick-card" href="./guide/backup"><strong>Protect your setup</strong><span>Export agents, providers, memory, conversations, and settings.</span></a>
 </div>

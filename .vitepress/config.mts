@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Cynosure',
   description: 'The end-user guide for the Cynosure desktop AI workspace.',
   lang: 'en-US',
+  srcExclude: ['README.md'],
   cleanUrls: true,
   lastUpdated: true,
   head: [
@@ -26,7 +27,8 @@ export default defineConfig({
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Core features', link: '/features/chat' },
       { text: 'Settings', link: '/guide/settings' },
-      { text: 'Troubleshooting', link: '/guide/troubleshooting' }
+      { text: 'Troubleshooting', link: '/guide/troubleshooting' },
+      { text: 'Download ↗', link: 'https://github.com/andreasjhagen/Cynosure/releases' }
     ],
     sidebar: [
       {
@@ -34,6 +36,7 @@ export default defineConfig({
         items: [
           { text: 'Welcome to Cynosure', link: '/' },
           { text: 'Getting started', link: '/guide/getting-started' },
+          { text: 'What Cynosure can do', link: '/guide/examples' },
           { text: 'Workspace tour', link: '/guide/workspace' }
         ]
       },
