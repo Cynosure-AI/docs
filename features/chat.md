@@ -28,6 +28,8 @@ From left to right, the composer can include:
 
 The context ring beside **Send** shows how much of the model’s context window the conversation is using.
 
+When Debug Mode is enabled, the Context inspector captures the complete pre-turn sequence as well as main-agent rounds. Tabs identify query planning, memory evidence verification, tool curation, and agent calls; request cards open collapsed so large prompts remain scannable.
+
 ## Work with files
 
 Select the paperclip and choose a file. Small documents can be included directly in model context; larger documents can switch to retrieval according to **Settings → Chat → Attachment Context**. Generated files are linked in the response and collected under **Artifacts**.

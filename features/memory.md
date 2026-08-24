@@ -21,6 +21,10 @@ Select the memory control in the composer, choose one or more folders, and enabl
 
 Automatic retrieval searches for chunks relevant to the current request. It does not paste every document into every message.
 
+For each turn, Cynosure keeps the original request unchanged and may add up to two same-language search expansions. Dense semantic and lexical BM25 candidates receive independent quotas, are rank-fused, and can then be reranked. Source-grounded relationship edges are considered beside text chunks. A verifier injects only evidence that directly supports the request; if the pool is merely related, it can issue one precise corrective search and otherwise returns no memory context.
+
+Retrieval scores use different scales. Semantic similarity and reranker relevance may be displayed as percentages. Rank-fusion and BM25 values are ranking signals, not probabilities, and are labeled accordingly.
+
 ## Relationships and visual graph
 
 The **Relationships** view lists extracted connections. **Visual Graph** lays entities out spatially so you can follow edges, filter fact levels, adjust spacing, and show or hide labels.
@@ -45,3 +49,5 @@ Do not switch embedding model or dimensions casually. Existing vectors may need 
 ## Improve weak retrieval
 
 Use descriptive filenames, remove outdated duplicates, place documents in a narrowly scoped folder, and ask a specific question. If results remain poor, review chunk size and retrieval count before changing the embedding model.
+
+For repeatable quality checks, maintain a JSON evaluation set with positive and unanswerable queries and run `pnpm --filter cynosure-server memory:evaluate <dataset.json>`. The report includes Hit/Recall/Precision/nDCG at K, mean reciprocal rank, no-answer false-positive rate, and latency. An object-form dataset can include thresholds so regressions fail the command in CI.

@@ -10,6 +10,8 @@ Select the tools control in the composer, then choose individual tools or enable
 
 For repeatable work, configure tools on the agent’s **Tools** tab instead of selecting them in every chat.
 
+Automatic discovery classifies the requested effect before exposing tools. Read-only requests receive only tools explicitly marked as read-only; write requests exclude destructive tools; destructive capabilities are considered only when the request calls for them. Clear personal-memory lookups bypass the external catalog and retain a small read-only memory recovery set, reducing prompt size and accidental side effects.
+
 ## Approval choices
 
 When a protected tool is requested, Cynosure shows what the agent intends to run. Review the tool name and arguments, then choose the available approval or denial action. A denial can include a reason so the agent can adapt its plan.
