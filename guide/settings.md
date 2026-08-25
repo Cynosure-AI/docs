@@ -16,7 +16,7 @@ Configure the context-routing model, AI-generated chat titles, context strategy,
 
 ## Memory
 
-Choose embedding and entity-extraction models, retrieval count, reranking, chunking, OCR, and vector storage behavior. See [Memory](/features/memory) before changing an established index.
+Choose embedding and knowledge-extraction models, retrieval count, reranking, chunking, and vector storage behavior. See [Memory](/features/memory) before changing an established index.
 
 ## Voice
 
@@ -38,7 +38,7 @@ Export selected workspace modules or restore them from an earlier Cynosure backu
 
 ## Reset Data
 
-Clear selected areas such as conversations, notifications, usage, memory, vectors, entity graph, agents, providers, MCP servers, settings, or channels.
+Clear selected areas such as conversations, notifications, usage, memory, vectors, the knowledge graph, agents, providers, MCP servers, settings, or channels.
 
 ::: danger Reset is destructive
 Export a backup first. Resetting vector indexes differs from deleting memory source documents; read the description of every selected module before confirming.
