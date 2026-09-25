@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.VITEPRESS_BASE ?? '/'
+
 export default defineConfig({
+  base,
   title: 'Cynosure',
   description: 'The end-user guide for the Cynosure desktop AI workspace.',
   lang: 'en-US',
@@ -8,7 +11,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${base}logo.png` }],
     ['meta', { name: 'theme-color', content: '#f1d900' }]
   ],
   themeConfig: {
