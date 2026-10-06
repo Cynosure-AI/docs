@@ -4,8 +4,6 @@
 
 Scheduled jobs run an agent with a saved instruction at a recurring time. Use them for monitoring, summaries, inbox processing, recurring research, or maintenance tasks.
 
-![The scheduled jobs list](../img/schedule.png)
-
 ## Create a scheduled job
 
 1. Open **Schedule** and select **Add Cron Job**.

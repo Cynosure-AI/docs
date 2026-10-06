@@ -4,7 +4,7 @@
 
 An agent is a reusable chat configuration: an identity, a model, stable instructions, and optional tools, memory, sub-agents, and execution rules.
 
-![The agent library](../img/agents.png)
+![The agent library](../img/08-agents-crimson.png)
 
 ## Create an agent
 

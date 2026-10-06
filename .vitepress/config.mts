@@ -1,18 +1,29 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.VITEPRESS_BASE ?? '/'
+
 export default defineConfig({
+  base,
   title: 'Cynosure',
   description: 'The end-user guide for the Cynosure desktop AI workspace.',
   lang: 'en-US',
+  srcExclude: ['README.md'],
   cleanUrls: true,
+  appearance: 'dark',
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
-    ['meta', { name: 'theme-color', content: '#f1d900' }]
+    ['link', { rel: 'icon', type: 'image/png', href: `${base}logo.png` }],
+    ['meta', { name: 'theme-color', content: '#070b0f' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' }],
+    ['link', {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap'
+    }]
   ],
   themeConfig: {
     logo: { src: '/logo.png', alt: 'Cynosure' },
-    siteTitle: 'Cynosure Docs',
+    siteTitle: 'CYNOSURE',
     search: {
       provider: 'local',
       options: {
@@ -23,10 +34,10 @@ export default defineConfig({
       }
     },
     nav: [
-      { text: 'Guide', link: '/guide/getting-started' },
-      { text: 'Core features', link: '/features/chat' },
-      { text: 'Settings', link: '/guide/settings' },
-      { text: 'Troubleshooting', link: '/guide/troubleshooting' }
+      { text: 'Guide', link: '/guide/getting-started', activeMatch: '/guide/' },
+      { text: 'Features', link: '/features/chat', activeMatch: '/features/' },
+      { text: 'Website', link: 'https://cynosure-ai.github.io/' },
+      { text: 'Download', link: 'https://github.com/Cynosure-AI/cynosure-app/releases' }
     ],
     sidebar: [
       {
@@ -34,6 +45,7 @@ export default defineConfig({
         items: [
           { text: 'Welcome to Cynosure', link: '/' },
           { text: 'Getting started', link: '/guide/getting-started' },
+          { text: 'What Cynosure can do', link: '/guide/examples' },
           { text: 'Workspace tour', link: '/guide/workspace' }
         ]
       },

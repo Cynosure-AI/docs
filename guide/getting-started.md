@@ -29,7 +29,7 @@ Select **Go to Chat** when setup is complete.
 3. Use the provider/model control at the right of the composer to confirm the model.
 4. Type a message and press **Enter** or select **Send**.
 
-![Cynosure ready for a new conversation](../img/cynosure_main.png)
+![Cynosure ready for a new conversation](../img/02-chat-new-crimson.png)
 
 ## Re-run setup
 
